@@ -23,10 +23,10 @@ $uploader = new \TriHTM\UploadVideo\Uploader;
 
 // Set file
 $file = new \TriHTM\UploadVideo\File($filePath);
-$file->setTitle('Video Uploader');
+$file->setTitle('GOTHAM Victor Zsasz intro');
 $file->setPrivacy(\TriHTM\UploadVideo\File::PRIVACY_PUBLIC);
-$file->setDescription('Description of this video.');
-$file->setTags(['video', 'uploader']);
+$file->setDescription('The introduction to Victor Zsasz in Gotham.');
+$file->setTags(['Gotham', 'Victor Zsasz']);
 
 // Set platform
 $platform = new \TriHTM\UploadVideo\Platforms\YouTube($configPlatform);
