@@ -1,9 +1,9 @@
 <?php
 
-namespace TriHTM\UploadVideo;
+namespace Innovatube\UploadVideo;
 
-use TriHTM\UploadVideo\File;
-use TriHTM\UploadVideo\Platforms\UploadableInterface;
+use Innovatube\UploadVideo\File;
+use Innovatube\UploadVideo\Platforms\UploadableInterface;
 
 class Uploader
 {

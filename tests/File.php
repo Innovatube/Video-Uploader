@@ -1,6 +1,6 @@
 <?php
 
-namespace TriHTM\UploadVideo\Tests;
+namespace Innovatube\UploadVideo\Tests;
 
 class File extends Base
 {
@@ -9,7 +9,7 @@ class File extends Base
         $filePath = __DIR__ .'/video.mp4';
 
         // Test path
-        $file = new \TriHTM\UploadVideo\File($filePath);
+        $file = new \Innovatube\UploadVideo\File($filePath);
         $this->assertEquals($filePath, $file->getPath());
 
         // Test filesize
@@ -21,7 +21,7 @@ class File extends Base
         $this->assertEquals($title, $file->getTitle());
 
         // Test privacy
-        $privacy = \TriHTM\UploadVideo\File::PRIVACY_PUBLIC;
+        $privacy = \Innovatube\UploadVideo\File::PRIVACY_PUBLIC;
         $file->setPrivacy($privacy);
         $this->assertEquals($privacy, $file->getPrivacy());
 

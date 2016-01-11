@@ -1,14 +1,14 @@
 {
-    "name": "trihtm/Video-Uploader",
+    "name": "Innovatube/Video-Uploader",
     "description": "Upload video to many platforms.",
     "keywords": ["video", "uploader", "upload", "youtube"],
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/trihtm/Video-Uploader",
+    "homepage": "https://github.com/Innovatube/Video-Uploader",
     "authors": [
         {
             "name": "Tri Ha Trong Minh",
-            "email": "trihtm123@gmail.com"
+            "email": "Innovatube123@gmail.com"
         }
     ],
     "require": {
@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "TriHTM\\": "src/"
+            "Innovatube\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TriHTM\\UploadVideo\\Tests\\": "tests"
+            "Innovatube\\UploadVideo\\Tests\\": "tests"
         }
     }
 }

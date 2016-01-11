@@ -1,8 +1,8 @@
 <?php
 
-namespace TriHTM\UploadVideo\Platforms;
+namespace Innovatube\UploadVideo\Platforms;
 
-use Trihtm\UploadVideo\AccessTokenTrait;
+use Innovatube\UploadVideo\AccessTokenTrait;
 
 abstract class Base implements UploadableInterface
 {

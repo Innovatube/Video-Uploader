@@ -1,6 +1,6 @@
 <?php
 
-namespace TriHTM\UploadVideo\Platforms;
+namespace Innovatube\UploadVideo\Platforms;
 
 use Google_Client;
 use Google_Service_YouTube;
@@ -9,8 +9,8 @@ use Google_Service_YouTube_VideoStatus;
 use Google_Service_YouTube_Video;
 use Google_Http_MediaFileUpload;
 use Google_Http_Request;
-use TriHTM\UploadVideo\File;
-use TriHTM\UploadVideo\UploadResponse;
+use Innovatube\UploadVideo\File;
+use Innovatube\UploadVideo\UploadResponse;
 
 class YouTube extends Base
 {

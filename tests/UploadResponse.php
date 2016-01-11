@@ -1,16 +1,16 @@
 <?php
 
-namespace TriHTM\UploadVideo\Tests;
+namespace Innovatube\UploadVideo\Tests;
 
 class UploadResponse extends Base
 {
     public function testUploadResponse()
     {
-        $uploadResponse = new \TriHTM\UploadVideo\UploadResponse();
+        $uploadResponse = new \Innovatube\UploadVideo\UploadResponse();
 
         // Test code
-        $uploadResponse->setCode(\TriHTM\UploadVideo\UploadResponse::RESPONSE_SUCCESS);
-        $this->assertEquals(\TriHTM\UploadVideo\UploadResponse::RESPONSE_SUCCESS, $uploadResponse->getCode());
+        $uploadResponse->setCode(\Innovatube\UploadVideo\UploadResponse::RESPONSE_SUCCESS);
+        $this->assertEquals(\Innovatube\UploadVideo\UploadResponse::RESPONSE_SUCCESS, $uploadResponse->getCode());
         $this->assertEquals(true, $uploadResponse->success());
         $this->assertEquals(false, $uploadResponse->failure());
 

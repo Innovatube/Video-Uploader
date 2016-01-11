@@ -1,6 +1,6 @@
 <?php
 
-namespace TriHTM\UploadVideo;
+namespace Innovatube\UploadVideo;
 
 class UploadResponse
 {

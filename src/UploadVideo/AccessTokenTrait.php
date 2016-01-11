@@ -1,6 +1,6 @@
 <?php
 
-namespace Trihtm\UploadVideo;
+namespace Innovatube\UploadVideo;
 
 trait AccessTokenTrait
 {
