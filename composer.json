@@ -1,8 +1,23 @@
 {
+    "name": "trihtm/Video-Uploader",
+    "description": "Upload video to many platforms.",
+    "keywords": ["video", "uploader", "upload", "youtube"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/trihtm/Video-Uploader",
+    "authors": [
+        {
+            "name": "Tri Ha Trong Minh",
+            "email": "trihtm123@gmail.com"
+        }
+    ],
     "require": {
+        "php": ">=5.4.0",
         "google/apiclient": "^1.1"
     },
-
+    "require-dev": {
+        "phpunit/phpunit": ">=3.7.0"
+    },
     "autoload": {
         "psr-4": {
             "TriHTM\\": "src/"
