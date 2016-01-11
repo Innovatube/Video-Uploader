@@ -11,13 +11,13 @@ First, all platforms should be created.
 $youtube = new \TriHTM\UploadVideo\Platforms\YouTube($configYoutube);
 
 // Setup Vimeo
-$vimeo = new \TriHTM\UploadVideo\Platforms\Video($configVimeo);
+$vimeo = new \TriHTM\UploadVideo\Platforms\Vimeo($configVimeo);
 ```
 
 When you want to upload file, create new file instance with title, privacy, description, tags...
 
 ```php
-$filePath = '/data/video.mp4';
+$filePath = 'video.mp4';
 $file = new \TriHTM\UploadVideo\File($filePath);
 $file->setTitle('GOTHAM Victor Zsasz intro');
 $file->setPrivacy(\TriHTM\UploadVideo\File::PRIVACY_PUBLIC);
@@ -31,11 +31,15 @@ Finally, call the Uploader and let him upload the video.
 $uploader = new \TriHTM\UploadVideo\Uploader;
 $uploader->setPlatform($youtube);
 $uploader->setFile($file);
-$uploader->setAccessToken($accessToken); // You should provide accessToken to the Uploader.
+$uploader->setAccessToken($accessToken); // You must provide accessToken for the Uploader.
 
 $response = $uploader->upload(); // The Uploader uploads video.
 
-var_dump($response); // Dump response.
+if ($response->success()) {
+    echo 'Success';
+} else {
+    echo 'Error '. $response->getMessage();
+}
 ```
 
 ## Supported Platforms
