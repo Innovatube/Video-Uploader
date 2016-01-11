@@ -78,4 +78,22 @@ class UploadResponse
     {
         return $this->videoId;
     }
+
+    /**
+     * Success?
+     * @return bool
+     */
+    public function success()
+    {
+        return $this->getCode() == self::RESPONSE_SUCCESS;
+    }
+
+    /**
+     * Failure?
+     * @return bool
+     */
+    public function failure()
+    {
+        return !$this->success();
+    }
 }
