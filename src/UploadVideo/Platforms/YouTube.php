@@ -80,16 +80,19 @@ class YouTube extends Base
 
             // If you want to make other calls after the file upload, set setDefer back to false
             $this->client->setDefer(false);
+
+            $videoId = $status['id'];
+
+            $response->setCode(UploadResponse::RESPONSE_SUCCESS);
+            $response->setMessage('Upload successfully.');
+            $response->setVideoId($videoId);
+
+            return $response;
         } catch (\Exception $e) {
             $response->setCode(UploadResponse::RESPONSE_ERROR_UNDEFINED);
             $response->setMessage($e->getMessage());
 
             return $response;
         }
-
-        $response->setCode(UploadResponse::RESPONSE_SUCCESS);
-        $response->setMessage('Upload successfully.');
-
-        return $response;
     }
 }

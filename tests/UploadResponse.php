@@ -15,5 +15,9 @@ class UploadResponse extends Base
         // Test message
         $uploadResponse->setMessage('Message');
         $this->assertEquals('Message', $uploadResponse->getMessage());
+
+        // Test videoid
+        $uploadResponse->setVideoId('123');
+        $this->assertEquals('123', $uploadResponse->getVideoId());
     }
 }

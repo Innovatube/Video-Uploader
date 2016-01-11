@@ -19,6 +19,11 @@ class UploadResponse
     protected $message;
 
     /**
+     * @var string
+     */
+    protected $videoId;
+
+    /**
      * Get response code
      *
      * @return int
@@ -56,5 +61,21 @@ class UploadResponse
     public function setMessage($message)
     {
         $this->message = $message;
+    }
+
+    /**
+     * @param $videoId
+     */
+    public function setVideoId($videoId)
+    {
+        $this->videoId = $videoId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVideoId()
+    {
+        return $this->videoId;
     }
 }
